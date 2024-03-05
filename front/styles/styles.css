@@ -100,7 +100,7 @@ h1{
     position: absolute;
 }
 
-.imagen_pelicula{
+/* .imagen_pelicula{
     height: 350px;
     width: 200px;
     background-image: url(./assets/Guardians\ of\ the\ Galaxy\ Vol.\ 2.jfif) ;
@@ -125,7 +125,7 @@ h1{
     background-size: 300px;
     transition: 300ms;
     filter: drop-shadow(5px-4px 10px #000)
-}
+} */
 
 .detalle, .detalle_2, .detalle_3{
     height: 200px;
