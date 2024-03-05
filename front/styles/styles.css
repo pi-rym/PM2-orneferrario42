@@ -1,0 +1,228 @@
+header{
+    display: flex;
+    height: 70px;
+    background-color: #1e085096;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.logo img{
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+}
+
+body{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background-image:url(./assets/fondoPAGINA.jfif) ;
+}
+nav{
+    display: flex;
+    align-items: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-left: 40%;
+    padding-right: 6%;
+    font-weight:100;
+}
+
+ul {
+    display: flex;
+    text-align: row;
+    padding: 10px 2.9px 5px
+}
+
+a{
+    color: rgb(194, 194, 194);
+    text-decoration: rgb(164, 201, 61);
+    font-size: 20px;
+}
+
+a:hover{
+    color: rgb(126, 167, 15);
+}
+
+h1{
+    color: rgb(238, 227, 227);
+    font-size: 1em;
+}
+
+#principal{
+    color: rgb(241, 236, 236);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: row;
+    text-align: center;
+}
+
+
+.container{
+    height: 130vh;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    height: 500px;
+    width: 370px;
+    margin: 25px;
+    transition: 300ms;
+    background-image: 300ms;
+}
+
+.pelicula, .pelicula_2, .pelicula_3{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    opacity: 1.5;
+    /* background-color: rgb(133, 126, 118); */
+    transition: 300ms;
+    position: absolute;
+}
+
+.imagen_pelicula{
+    height: 350px;
+    width: 200px;
+    background-image: url(./assets/Guardians\ of\ the\ Galaxy\ Vol.\ 2.jfif) ;
+    background-size: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px-4px 10px #000)
+}
+
+.imagen_pelicula_2{
+    height: 350px;
+    width: 250px;
+    background-image: url(./assets/Star\ Wars-EpisodeIV-ANewHope.jfif) ;
+    background-size: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px-4px 10px #000)
+}
+
+.imagen_pelicula_3{
+    height: 350px;
+    width: 250px;
+    background-image: url(./assets/The\ Lord\ of\ the\ Rings\ -\ The\ Fellowship\ of\ the\ Ring.jfif) ;
+    background-size: 300px;
+    transition: 300ms;
+    filter: drop-shadow(5px-4px 10px #000)
+}
+
+.detalle, .detalle_2, .detalle_3{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius:15%;
+    border-bottom-right-radius:15%;
+    margin-top: 200px;
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+}
+
+/*HOVER*/
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+
+
+.card:hover .imagen_pelicula{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(./assets/Guardians2.jfif);
+}
+
+.card:hover .imagen_pelicula_2{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(./assets/Starwars2.jfif);
+}
+
+.card:hover .imagen_pelicula_3{
+    transform: translatey(-40px);
+    transition: 300ms;
+    filter: none;
+    background-image: url(./assets/The\ Lord\ of\ the\ Ring2.jfif);
+}
+
+.card:hover .pelicula{
+    background-image: radial-gradient(white, rgb(63, 39, 167));
+}
+
+.card:hover .pelicula_2{
+    background-image: radial-gradient(white, rgb(9, 76, 131));
+}
+
+.card:hover .pelicula_3{
+    background-image: radial-gradient(white, rgba(197, 168, 4, 0.904));
+}
+
+/* texto y boton */
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+margin: auto;
+width: 90%;
+font-size: 12px;
+}
+
+.btn {
+    width: 100px;
+    margin: auto;
+    cursor:pointer;
+    background: #8f34d9;
+    background-image: -webkit-linear-gradient(top, #8f34d9, #b82b5e);
+    background-image: -moz-linear-gradient(top, #8f34d9, #b82b5e);
+    background-image: -ms-linear-gradient(top, #8f34d9, #b82b5e);
+    background-image: -o-linear-gradient(top, #8f34d9, #b82b5e);
+    background-image: linear-gradient(to bottom, #8f34d9, #b82b5e);
+    -webkit-border-radius: 54;
+    -moz-border-radius: 54;
+    border-radius: 54px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 10px 25px 12px 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #d10f56);
+    background-image: -moz-linear-gradient(top, #000000, #d10f56);
+    background-image: -ms-linear-gradient(top, #000000, #d10f56);
+    background-image: -o-linear-gradient(top, #000000, #d10f56);
+    background-image: linear-gradient(to bottom, #000000, #d10f56);
+    text-decoration: none;
+}
+
