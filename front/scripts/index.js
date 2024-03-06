@@ -1,9 +1,11 @@
-console.log(tempData);
-$.get("https://students-api.2.us-1.fl0.io/movies").done((data) => {
-    const cards = document.querySelectorAll(".card");
+// console.log(tempData);    
+const container = document.getElementsByClassName("container")[0];
+const cards = document.querySelectorAll(".card");
 
 // Mapear y mostrar las tarjetas
-tempData.forEach((movie, index) => {
+$.get("https://students-api.2.us-1.fl0.io/movies", (movies) => {
+movies.forEach((movie, index) => {
+
     const card = cards[index];
 if (card){
 
@@ -30,7 +32,7 @@ if (card){
     });
     
 });
-const container = document.getElementsByClassName("container")[0];
+
 
 
 
