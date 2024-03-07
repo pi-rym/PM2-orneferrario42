@@ -25,7 +25,7 @@ header{
 }
 
 body{
-    height: 200px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     background-image:url(./assets/fondoPAGINA.jfif) ;
@@ -42,18 +42,19 @@ nav{
 
 ul {
     display: flex;
-    text-align: row;
-    padding: 10px 2.9px 5px
+    text-align: center;
+    justify-content: center;
+    padding: 2px 2.9px 2px
 }
 
 a{
     color: rgb(194, 194, 194);
     text-decoration: rgb(164, 201, 61);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 a:hover{
-    color: rgb(126, 167, 15);
+    color: rgb(142, 190, 10);
 }
 
 h1{
@@ -62,7 +63,7 @@ h1{
 }
 
 #principal{
-    color: rgb(241, 236, 236);
+    color: rgb(175, 26, 26);
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -72,32 +73,34 @@ h1{
 
 
 .container{
-    height: 130vh;
-    max-width: 2000px;
+    height: 90vh;
+    max-width: 90px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap:unset;
+    align-items:center;
 }
 
 .card{
-    height: 500px;
-    width: 370px;
-    margin: 25px;
+    height: 25em;
+    width: 300px;
+    margin: 50px;
     transition: 300ms;
     background-image: 300ms;
 }
 
-.pelicula, .pelicula_2, .pelicula_3{
-    height: 500px;
-    width: 400px;
+.card-body, .pelicula_2, .pelicula_3{
+    height: 100px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    opacity: 1.5;
+    opacity: 3;
     /* background-color: rgb(133, 126, 118); */
     transition: 300ms;
-    position: absolute;
+    /* position: absolute; */
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 /* .imagen_pelicula{
@@ -127,17 +130,18 @@ h1{
     filter: drop-shadow(5px-4px 10px #000)
 } */
 
-.detalle, .detalle_2, .detalle_3{
-    height: 200px;
-    width: 300px;
-    background-color: white;
-    position: absolute;
+.card-textdetalle, .detalle_2, .detalle_3{
+    height: 400px;
+    width: 200px;
+    margin-top: 150px;
+    background-color: rgba(235, 206, 206, 0.781);
+    position:absolute;
     border-bottom-left-radius:15%;
     border-bottom-right-radius:15%;
-    margin-top: 200px;
-    z-index: 10;
+    margin-top: 150px;
+    z-index: 20;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
     transition: 300ms;
 }
 
@@ -149,7 +153,7 @@ h1{
 
 
 
-.card:hover .imagen_pelicula{
+/* .card:hover .imagen_pelicula{
     transform: translatey(-40px);
     transition: 300ms;
     filter: none;
@@ -168,19 +172,19 @@ h1{
     transition: 300ms;
     filter: none;
     background-image: url(./assets/The\ Lord\ of\ the\ Ring2.jfif);
-}
+} */
 
-.card:hover .pelicula{
+.card:hover .card-body{
     background-image: radial-gradient(white, rgb(63, 39, 167));
 }
 
-.card:hover .pelicula_2{
+/* .card:hover .pelicula_2{
     background-image: radial-gradient(white, rgb(9, 76, 131));
 }
 
 .card:hover .pelicula_3{
     background-image: radial-gradient(white, rgba(197, 168, 4, 0.904));
-}
+} */
 
 /* texto y boton */
 
@@ -188,12 +192,15 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size:small;
 }
 
 p{
 margin: auto;
 width: 90%;
-font-size: 12px;
+font-size: 14px;
+display: flex;
+justify-content: center;
 }
 
 .btn {
