@@ -11,9 +11,9 @@ if (card){
 
 // Crear el contenido de la tarjeta 
     const cardContent = `
-    <div class="card-body">
-    <img class="card-img-top" src="${movie.poster}"> 
-        <div class="card-textdetalle"> 
+    <div class="pelicula">
+    <img src="${movie.poster}"> 
+        <div class="detalle"> 
         <h2>${movie.title}</h2>
         <p>Director: ${movie.director}</p>
         <p>Year: ${movie.year},Genre: ${movie.genre.join(", ")}, Duration: ${movie.duration}</p>

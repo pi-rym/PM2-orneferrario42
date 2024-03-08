@@ -81,16 +81,16 @@ h1{
 }
 
 .card{
-    height: 25em;
+    height: 100px;
     width: 300px;
-    margin: 50px;
+    margin: 100px;
     transition: 300ms;
     background-image: 300ms;
 }
 
-.card-body, .pelicula_2, .pelicula_3{
-    height: 100px;
-    width: 100px;
+.pelicula, .pelicula_2, .pelicula_3{
+    height: 200px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ h1{
     opacity: 3;
     /* background-color: rgb(133, 126, 118); */
     transition: 300ms;
-    /* position: absolute; */
+    position: absolute;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -130,18 +130,17 @@ h1{
     filter: drop-shadow(5px-4px 10px #000)
 } */
 
-.card-textdetalle, .detalle_2, .detalle_3{
-    height: 400px;
-    width: 200px;
+.detalle, .detalle_2, .detalle_3{
+    height: 300px;
+    width: 300px;
     margin-top: 150px;
     background-color: rgba(235, 206, 206, 0.781);
     position:absolute;
-    border-bottom-left-radius:15%;
-    border-bottom-right-radius:15%;
-    margin-top: 150px;
-    z-index: 20;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+    z-index: 10;
     display: grid;
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     transition: 300ms;
 }
 
@@ -153,12 +152,12 @@ h1{
 
 
 
-/* .card:hover .imagen_pelicula{
+.card:hover .imagen_pelicula{
     transform: translatey(-40px);
     transition: 300ms;
     filter: none;
     background-image: url(./assets/Guardians2.jfif);
-}
+} 
 
 .card:hover .imagen_pelicula_2{
     transform: translatey(-40px);
@@ -172,9 +171,9 @@ h1{
     transition: 300ms;
     filter: none;
     background-image: url(./assets/The\ Lord\ of\ the\ Ring2.jfif);
-} */
+} 
 
-.card:hover .card-body{
+.card:hover .pelicula{
     background-image: radial-gradient(white, rgb(63, 39, 167));
 }
 
