@@ -1,47 +1,15 @@
-// console.log(tempData);    
-const container = document.getElementsByClassName("container")[0];
-const cards = document.querySelectorAll(".card");
-
 // Mapear y mostrar las tarjetas
-$.get("https://students-api.2.us-1.fl0.io/movies", (movies) => {
-movies.forEach((movie, index) => {
+const renderCard = require ('./renderCards');
+const axios = require ("axios")
 
-    const card = cards[index];
-if (card){
 
-// Crear el contenido de la tarjeta 
-    const cardContent = `
-    <div class="pelicula">
-    <img src="${movie.poster}"> 
-        <div class="detalle"> 
-        <h2>${movie.title}</h2>
-        <p>Director: ${movie.director}</p>
-        <p>Year: ${movie.year},Genre: ${movie.genre.join(", ")}, Duration: ${movie.duration}</p>
-        <p>Duration: ${movie.duration},Rating: ${movie.rate}</p>
-        <div class="btn"><h6>Ver</h6></div>
-        </div>
-    </div>
-    `;
+//*Promesas. . .
+const funcion = async ()  => {
+    try {const {data} = await axios.get("https://students-api.up.railway.app/movies")
+renderCard(data);
+    } catch (error) {
+        console.log(error)
+    }
     
-// Agregar el contenido a la tarjeta
-    card.innerHTML = cardContent;
-    card.classList.remove("card");  
-    card.classList.add("card");  
-
-        }
-    });
-    
-});
-
-
-
-
-
-// `<img src="${movie.poster}" alt="${movie.title}">
-//     <h3>${movie.title}</h3>
-//     <p>Director: ${movie.director}</p>
-//     <p>Year: ${movie.year}</p>
-//     <p>Genre: ${movie.genre.join(", ")}</p>
-//     <p>Duration: ${movie.duration}</p>
-//     <p>Rating: ${movie.rate}</p>
-//     `;
+}
+funcion()
