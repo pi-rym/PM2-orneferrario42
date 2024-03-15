@@ -5,7 +5,7 @@ const axios = require ("axios")
 
 //*Promesas. . .
 const funcion = async ()  => {
-    try {const {data} = await axios.get("https://students-api.up.railway.app/movies")
+    try {const {data} = await axios.get("http://localhost:3000/moviesII") //https://students-api.up.railway.app/movies
 renderCard(data);
     } catch (error) {
         console.log(error)
