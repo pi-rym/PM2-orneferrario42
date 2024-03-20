@@ -2,43 +2,55 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>SUPERPELIS - Ver HenryProyectoFullStack M02 de Ornella Ferrario en Español</title>
   </head>
   <body>
-
     <!-- //ACA EMPIEZA MI HEADER// -->
-      <header>
+    <header class="header">
 
-        <div class = "logo">
-          <img src="./styles/assets/LOGOsuperpelis.jfif" class ="logo" alt ="LOGO SP CINEMA" />
-          <h1 id="principal">SUPER PELIS CINEMA</h1>
-        </div>
+      <div class="menu">
 
-      <nav>
-          <ul class="justify-content-end">
-              <a class="nav-link" href="./sobre.html">Sobre mi proyecto</a>
-              <a class="nav-link" href="./historia.html">Historia del cine</a>
-              <a class="nav-link" href="./webs.html">Webs recomendadas</a>
-          </ul>
-      </nav> 
+          <a href="logo" class ="logo" >SuperPelis</a>
+          <input type="checkbox" id="menu" />
+          <label for="menu">
+              <img src = "./styles/assets/menu.png" class ="menu-icono" alt="menu">
+          </label>
+          
+          <nav class="navbar">
+              <ul>
+                  <li><a href="./index.html">Inicio</a></li>
+                  <li><a href="./HTML/historia.html">Historia del Cine</a></li>
+                  <li><a href="./HTML/webs.html">Webs mas recomendadas</a></li>
+                  <li><a href="./HTML/sobre.html">Sobre Mi Proyecto</a></li>
+              </ul>
+          </nav>
+          <a href="./HTML/cargar.html" class="btn-1"> SUBIR PELICULA </a>
+      </div>
+
+      <div class="header-content container" >
+          <div class="header-1">
+              <img src="./styles/assets/harryPotter.png" alt="harryPotter">
+              <a href="#" class="btn-2">Ver Ahora</a>
+          </div>
+          <div class="header-2">
+              <h1>Las mejores <br> peliculas</h1>
+              <img src="./styles/assets/play.png" alt="play">
+          </div>
+      </div>
   </header>
-    <hr></hr>
-
+  <hr></hr>
 <!-- //ACA EMPIEZA MI MAIN// -->
-
   <main>
-
     <!-- //CONTAINER DE LAS TARJETAS// -->
     <div class = "container">
-  
+      <br>
+      <h2>Peliculas mas vistas</h2>
+        
       <!-- //PELICULA 1// -->
       <div class ="card" style="width: 18rem;">
         <div class ="pelicula" >
@@ -78,12 +90,18 @@
     </div>
   </main>
     <hr></hr>
-
-
     <!-- //MI FOOTER// -->
-  <footer>
-      <p>&copy; 2024 SuperPelis</p>
+    <footer class="footer container">
+      <h3>SuperPelis</3>
+          <ul>
+              <li><a href="./HTML/cargar.html">SUBIR PELICULA</a></li>
+              <li><a href="#">CONTACTO</a></li>
+          </ul>
+      
+  
   </footer>
     <script src="./public/bundle.js"></script>
+    
   </body>
+  
 </html>

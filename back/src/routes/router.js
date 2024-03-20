@@ -4,8 +4,8 @@ const movieController = require("../controller/movieController");
 
 const rutas=Router();
 
-rutas.get("/movies", movies);
-rutas.get("/moviesII", movieController);
+rutas.get("/movies", movieController);
+
 
 
 module.exports = rutas;
