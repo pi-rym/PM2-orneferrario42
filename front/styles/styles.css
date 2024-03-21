@@ -123,12 +123,13 @@ body {
 .container {
     padding: 50px 0 0;
     display: flex;
-    flex-direction: colum;
+    flex-direction: colum;    
 }
 
-h2 {
+h3 {
     font-size: 35px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 hr {
@@ -137,14 +138,19 @@ hr {
     margin-top: 20px;
 }
 
-.card {
+.card .poster {
     display: grid;
     grid-template-columns:repeat(auto-fit, min-max(250px, 1fr));
     transition: 300ms;
     background-image: 300ms;
 }
-.card:hover{
+.poster .card:hover{
     transform: scale(1.15);
+}
+
+.poster {
+    width: 445px;
+    height:300px ;
 }
 
 .btn {
