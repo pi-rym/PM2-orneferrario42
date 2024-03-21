@@ -1,10 +1,11 @@
 const {Router} = require("express");
-const {movies} = require("../controller/controlador");
 const movieController = require("../controller/movieController");
+const {newmovie}= require("../controller/crearPelisContro");
 
 const rutas=Router();
 
 rutas.get("/movies", movieController);
+rutas.post("/movies",newmovie );
 
 
 
